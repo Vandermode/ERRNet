@@ -1,0 +1,13 @@
+.vscode
+*.pyc
+*.pth
+*.png
+*.jpg
+__pycache__
+checkpoints
+result
+runs
+.ssh*
+.rsyncignore
+bak
+*.zip
