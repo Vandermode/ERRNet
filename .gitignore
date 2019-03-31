@@ -1,8 +1,6 @@
 .vscode
 *.pyc
 *.pth
-*.png
-*.jpg
 __pycache__
 checkpoints
 result
