@@ -25,7 +25,7 @@ if opt.debug:
     opt.serial_batches = True
     opt.no_flip = True
 
-
+# modify the following code to 
 datadir = '/media/kaixuan/DATA/Papers/Code/Data/Reflection/'
 
 datadir_syn = join(datadir, 'VOCdevkit/VOC2012/PNGImages')
@@ -71,6 +71,7 @@ if opt.resume:
     res = engine.eval(eval_dataloader_ceilnet, dataset_name='testdata_table2')
 
 
+# define training strategy 
 engine.model.opt.lambda_gan = 0
 # engine.model.opt.lambda_gan = 0.01
 set_learning_rate(1e-4)
