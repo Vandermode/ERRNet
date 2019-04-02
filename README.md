@@ -1,6 +1,6 @@
 # ERRNet
 
-The implementation of CVPR 2019 paper "Single Image Reflection Removal Exploiting Misaligned Training Data and Network Enhancements" [arxiv](https://arxiv.org/abs/1904.00637)
+The implementation of CVPR 2019 paper "[Single Image Reflection Removal Exploiting Misaligned Training Data and Network Enhancements](https://arxiv.org/abs/1904.00637)"
 
 
 ## Highlights
