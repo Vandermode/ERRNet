@@ -2,6 +2,7 @@
 
 The implementation of CVPR 2019 paper "[Single Image Reflection Removal Exploiting Misaligned Training Data and Network Enhancements](https://arxiv.org/abs/1904.00637)"
 
+Our pretrained model and collected unaligned dataset are now available at [Google Driver](https://drive.google.com/drive/folders/16KH0wtUxodC3qGLxNz-QkPuAH55freTf?usp=sharing). 
 
 ## Highlights
 
@@ -24,6 +25,37 @@ Image samples from our unaligned dataset are shown below:
 * Requirements: opencv-python, tensorboardX, visdom
 * Platforms: Ubuntu 16.04, cuda-8.0
 
+
+## Quick Start
+### 1. Preparing your training/testing datasets.
+
+#### Training dataset
+* 7,643 cropped images with size 224 × 224 from
+PASCAL VOC [Pascal VOC dataset](http://host.robots.ox.ac.uk/pascal/VOC/) (image ids are provided in VOC2012_224_train_png.txt, you should crop the center region with size 224 x 224 to reproduce our result). 
+
+* 90 real-world training images from [Berkeley real dataset](https://github.com/ceciliavision/perceptual-reflection-removal) 
+
+#### Testing dataset
+* 100 synthetic testing images from [CEILNet dataset](https://github.com/fqnchina/CEILNet) (testdata_reflection_synthetic_table2) 
+* 20 real testing images from [Berkeley real dataset](https://github.com/ceciliavision/perceptual-reflection-removal).  
+* Three sub-datasets, namely ‘Objects’, ‘Postcard’, ‘Wild’ from [SIR^2 dataset](https://sir2data.github.io/)
+
+Once the data are downloaded, you must organize the dataset according to our code implementation (see the source code of datasets.CEILDataset, e.t.c.)
+
+
+### 2. Playing with aligned data
+
+#### Testing
+ * Download our pretrained model from [Google Driver](https://drive.google.com/drive/folders/16KH0wtUxodC3qGLxNz-QkPuAH55freTf?usp=sharing) and move ```errnet_060_00463920.pt``` to ```checkpoints/errnet/```. 
+ * Evaluate the model performance by ```python test_errnet.py --name errnet -r --icnn_path checkpoints/errnet/errnet_060_00463920.pt --hyper```
+
+### Training
+* Reproduce our results by ```python train_errnet.py --name errnet --hyper``` 
+* Check ```options/errnet/train_options.py``` to see more training options. 
+
+### 3. (TODO) Playing with unaligned data
+
+
 ## Citation
 
 If you find our code helpful in your research or work please cite our paper.
@@ -38,4 +70,6 @@ If you find our code helpful in your research or work please cite our paper.
 ```
 
 ## Acknowledgments
-Code architecture is inspired by [CycleGAN](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix) and [EDSR](https://github.com/thstkdgus35/EDSR-PyTorch). 
+* Our code architecture is inspired by [CycleGAN](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix) and [EDSR](https://github.com/thstkdgus35/EDSR-PyTorch). 
+
+* Special thanks to [@fqnchina](https://github.com/fqnchina) and [@ceciliavision](https://github.com/ceciliavision) for some discussion of this work. 

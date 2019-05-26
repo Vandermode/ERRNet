@@ -31,11 +31,11 @@ eval_dataset_real = datasets.CEILTestDataset(
 eval_dataset_postcard = datasets.CEILTestDataset(join(datadir, 'postcard'))
 eval_dataset_solidobject = datasets.CEILTestDataset(join(datadir, 'solidobject'))
 
-test_dataset_internet = datasets.RealDataset(join(datadir, 'internet'))
-test_dataset_unaligned300 = datasets.RealDataset(join(datadir, 'refined_unaligned_data/unaligned300/blended'))
-test_dataset_unaligned150 = datasets.RealDataset(join(datadir, 'refined_unaligned_data/unaligned150/blended'))
-test_dataset_unaligned_dynamic = datasets.RealDataset(join(datadir, 'refined_unaligned_data/unaligned_dynamic/blended'))
-test_dataset_sir2 = datasets.RealDataset(join(datadir, 'sir2_wogt/blended'))
+# test_dataset_internet = datasets.RealDataset(join(datadir, 'internet'))
+# test_dataset_unaligned300 = datasets.RealDataset(join(datadir, 'refined_unaligned_data/unaligned300/blended'))
+# test_dataset_unaligned150 = datasets.RealDataset(join(datadir, 'refined_unaligned_data/unaligned150/blended'))
+# test_dataset_unaligned_dynamic = datasets.RealDataset(join(datadir, 'refined_unaligned_data/unaligned_dynamic/blended'))
+# test_dataset_sir2 = datasets.RealDataset(join(datadir, 'sir2_wogt/blended'))
 
 
 eval_dataloader_ceilnet = datasets.DataLoader(
@@ -58,25 +58,25 @@ eval_dataloader_postcard = datasets.DataLoader(
     eval_dataset_postcard, batch_size=1, shuffle=False,
     num_workers=opt.nThreads, pin_memory=True)
 
-test_dataloader_internet = datasets.DataLoader(
-    test_dataset_internet, batch_size=1, shuffle=False,
-    num_workers=opt.nThreads, pin_memory=True)
+# test_dataloader_internet = datasets.DataLoader(
+#     test_dataset_internet, batch_size=1, shuffle=False,
+#     num_workers=opt.nThreads, pin_memory=True)
 
-test_dataloader_sir2 = datasets.DataLoader(
-    test_dataset_sir2, batch_size=1, shuffle=False,
-    num_workers=opt.nThreads, pin_memory=True)
+# test_dataloader_sir2 = datasets.DataLoader(
+#     test_dataset_sir2, batch_size=1, shuffle=False,
+#     num_workers=opt.nThreads, pin_memory=True)
 
-test_dataloader_unaligned300 = datasets.DataLoader(
-    test_dataset_unaligned300, batch_size=1, shuffle=False,
-    num_workers=opt.nThreads, pin_memory=True)
+# test_dataloader_unaligned300 = datasets.DataLoader(
+#     test_dataset_unaligned300, batch_size=1, shuffle=False,
+#     num_workers=opt.nThreads, pin_memory=True)
 
-test_dataloader_unaligned150 = datasets.DataLoader(
-    test_dataset_unaligned150, batch_size=1, shuffle=False,
-    num_workers=opt.nThreads, pin_memory=True)
+# test_dataloader_unaligned150 = datasets.DataLoader(
+#     test_dataset_unaligned150, batch_size=1, shuffle=False,
+#     num_workers=opt.nThreads, pin_memory=True)
 
-test_dataloader_unaligned_dynamic = datasets.DataLoader(
-    test_dataset_unaligned_dynamic, batch_size=1, shuffle=False,
-    num_workers=opt.nThreads, pin_memory=True)
+# test_dataloader_unaligned_dynamic = datasets.DataLoader(
+#     test_dataset_unaligned_dynamic, batch_size=1, shuffle=False,
+#     num_workers=opt.nThreads, pin_memory=True)
 
 
 engine = Engine(opt)

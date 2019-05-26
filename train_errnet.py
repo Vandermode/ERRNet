@@ -70,7 +70,6 @@ def set_learning_rate(lr):
 if opt.resume:
     res = engine.eval(eval_dataloader_ceilnet, dataset_name='testdata_table2')
 
-
 # define training strategy 
 engine.model.opt.lambda_gan = 0
 # engine.model.opt.lambda_gan = 0.01
