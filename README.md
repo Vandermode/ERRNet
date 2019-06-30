@@ -2,7 +2,7 @@
 
 The implementation of CVPR 2019 paper "[Single Image Reflection Removal Exploiting Misaligned Training Data and Network Enhancements](https://arxiv.org/abs/1904.00637)"
 
-Our pretrained model and collected unaligned dataset are now available at [Google Drive](https://drive.google.com/drive/folders/16KH0wtUxodC3qGLxNz-QkPuAH55freTf?usp=sharing). 
+*News* (30/06/2019): Our suppl. material, poster, pretrained model and collected unaligned dataset are now available at [Google Drive](https://drive.google.com/drive/folders/16KH0wtUxodC3qGLxNz-QkPuAH55freTf?usp=sharing). 
 
 ## Highlights
 
