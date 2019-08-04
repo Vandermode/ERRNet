@@ -69,6 +69,10 @@ If you find our code helpful in your research or work please cite our paper.
  }
 ```
 
+## Contact
+If you find any problem, please feel free to contact me (kaixuan_wei at bit.edu.cn).
+A brief self-introduction is required, if you would like to get an in-depth help from me. 
+
 ## Acknowledgments
 * Our code architecture is inspired by [CycleGAN](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix) and [EDSR](https://github.com/thstkdgus35/EDSR-PyTorch). 
 
