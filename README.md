@@ -46,7 +46,7 @@ Once the data are downloaded, you must organize the dataset according to our cod
 ### 2. Playing with aligned data
 
 #### Testing
- * Download our pretrained model from [Google Drive](https://drive.google.com/drive/folders/16KH0wtUxodC3qGLxNz-QkPuAH55freTf?usp=sharing) and move ```errnet_060_00463920.pt``` to ```checkpoints/errnet/```. 
+ * Download our pretrained model from [OneDrive](https://1drv.ms/f/s!AqddfvhavTRih3n3W0P29cxVIlfM) and move ```errnet_060_00463920.pt``` to ```checkpoints/errnet/```. 
  * Evaluate the model performance by ```python test_errnet.py --name errnet -r --icnn_path checkpoints/errnet/errnet_060_00463920.pt --hyper```
 
 #### Training
