@@ -2,7 +2,7 @@
 
 The implementation of CVPR 2019 paper "[Single Image Reflection Removal Exploiting Misaligned Training Data and Network Enhancements](https://arxiv.org/abs/1904.00637)"
 
-*News* (30/06/2019): Our suppl. material, poster, pretrained model and collected unaligned dataset are now available at [Google Drive](https://drive.google.com/drive/folders/16KH0wtUxodC3qGLxNz-QkPuAH55freTf?usp=sharing). 
+*News* (19/09/2019): Fix the broken link; our pretrained model and collected unaligned dataset are now available at [OneDrive](https://1drv.ms/f/s!AqddfvhavTRih3n3W0P29cxVIlfM)   
 
 ## Highlights
 
@@ -46,7 +46,7 @@ Once the data are downloaded, you must organize the dataset according to our cod
 ### 2. Playing with aligned data
 
 #### Testing
- * Download our pretrained model from [Google Drive](https://drive.google.com/drive/folders/16KH0wtUxodC3qGLxNz-QkPuAH55freTf?usp=sharing) and move ```errnet_060_00463920.pt``` to ```checkpoints/errnet/```. 
+ * Download our pretrained model from [OneDrive](https://1drv.ms/f/s!AqddfvhavTRih3n3W0P29cxVIlfM) and move ```errnet_060_00463920.pt``` to ```checkpoints/errnet/```. 
  * Evaluate the model performance by ```python test_errnet.py --name errnet -r --icnn_path checkpoints/errnet/errnet_060_00463920.pt --hyper```
 
 #### Training
@@ -68,6 +68,10 @@ If you find our code helpful in your research or work please cite our paper.
    year={2019},
  }
 ```
+
+## Contact
+If you find any problem, please feel free to contact me (kaixuan_wei at bit.edu.cn).
+A brief self-introduction is required, if you would like to get an in-depth help from me. 
 
 ## Acknowledgments
 * Our code architecture is inspired by [CycleGAN](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix) and [EDSR](https://github.com/thstkdgus35/EDSR-PyTorch). 
