@@ -53,8 +53,8 @@ Once the data are downloaded, you must organize the dataset according to our cod
 * Reproduce our results by ```python train_errnet.py --name errnet --hyper``` 
 * Check ```options/errnet/train_options.py``` to see more training options. 
 
-### 3. (TODO) Playing with unaligned data
-
+### 3. Playing with unaligned data
+* Reproduce our finetuned model by ```python train_errnet_unaligned.py --name errnet_unaligned_ft --hyper -r --icnn_path checkpoints/errnet/errnet_060_00463920.pt --unaligned_loss vgg```
 
 ## Citation
 

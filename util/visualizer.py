@@ -4,7 +4,6 @@ import ntpath
 import time
 from . import util
 from . import html
-from scipy.misc import imresize
 
 
 class Visualizer():
