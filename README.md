@@ -60,7 +60,7 @@ Once the data are downloaded, you must organize the dataset according to our cod
 
 If you find our code helpful in your research or work please cite our paper.
 
-```
+```bibtex
  @inproceedings{wei2019single,
    title={Single Image Reflection Removal Exploiting Misaligned Training Data and Network Enhancements},
    author={Wei, Kaixuan and Yang, Jiaolong and Fu, Ying and David, Wipf and Huang, Hua},
@@ -70,7 +70,7 @@ If you find our code helpful in your research or work please cite our paper.
 ```
 
 ## Contact
-If you find any problem, please feel free to contact me (kaixuan_wei at bit.edu.cn).
+If you find any problem, please feel free to contact me (kxwei at princeton.edu ~~kaixuan_wei at bit.edu.cn~~).
 A brief self-introduction is required, if you would like to get an in-depth help from me. 
 
 ## Acknowledgments
