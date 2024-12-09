@@ -70,7 +70,7 @@ If you find our code helpful in your research or work please cite our paper.
 ```
 
 ## Contact
-If you find any problem, please feel free to contact me (kxwei at princeton.edu ~~kaixuan_wei at bit.edu.cn~~).
+If you find any problem, please feel free to contact me (kaixuan.wei at kaust.edu.sa).
 A brief self-introduction is required, if you would like to get an in-depth help from me. 
 
 ## Acknowledgments
